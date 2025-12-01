@@ -6,7 +6,7 @@ Simple demonstration of the statistics library using data from a CSV file.
 
 import sys
 import pandas as pd
-from stats_lib import mean, variance
+from stats_lib import mean, variance, std_dev
 
 # Get CSV filename from command line argument
 if len(sys.argv) < 2:
@@ -28,3 +28,7 @@ print(f"Mean: {avg}")
 # Calculate variance
 var = variance(data)
 print(f"Variance: {var}")
+
+# Demonstrate standard deviation
+print("\n--- Standard Deviation ---")
+print(f"Standard deviation: {std_dev(data)}")

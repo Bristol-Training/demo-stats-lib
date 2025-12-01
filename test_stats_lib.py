@@ -10,6 +10,7 @@ from stats_lib import mean, variance
 
 # Tests for mean function
 
+
 def test_mean_basic():
     """Test mean with simple numbers."""
     assert mean([1, 2, 3, 4, 5]) == 3.0
@@ -32,6 +33,7 @@ def test_mean_single():
 
 # Tests for variance function
 
+
 def test_variance_basic():
     """Test variance calculation."""
     result = variance([1, 2, 3, 4, 5])
@@ -47,4 +49,3 @@ def test_variance_two_values():
     """Test variance with two values."""
     result = variance([1, 3])
     assert result == 1.0
-
