@@ -23,8 +23,8 @@ data = df.values.flatten().tolist()
 
 # Calculate mean
 avg = mean(data)
-print(f"Mean: {avg}")
+print(f"Mean (with N/As): {avg}")
 
 # Calculate variance
 var = variance(data)
-print(f"Variance: {var}")
+print(f"Variance with (N/As): {var}")
