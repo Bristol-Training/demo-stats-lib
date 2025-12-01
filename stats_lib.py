@@ -21,7 +21,9 @@ def mean(data: List[Union[int, float]]) -> float:
         >>> mean([1, 2, 3, 4, 5])
         3.0
     """
-    return sum(data) / len(data)
+    # Filter out None values
+    clean_data = [x for x in data if x is not None]
+    return sum(clean_data) / len(clean_data)
 
 
 def variance(data: List[Union[int, float]]) -> float:
@@ -38,5 +40,7 @@ def variance(data: List[Union[int, float]]) -> float:
         >>> variance([1, 2, 3, 4, 5])
         2.0
     """
-    avg = mean(data)
-    return sum((x - avg) ** 2 for x in data) / len(data)
+    # Filter out None values
+    clean_data = [x for x in data if x is not None]
+    avg = mean(clean_data)
+    return sum((x - avg) ** 2 for x in clean_data) / len(clean_data)
