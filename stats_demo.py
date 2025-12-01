@@ -28,3 +28,8 @@ print(f"Mean: {avg}")
 # Calculate variance
 var = variance(data)
 print(f"Variance: {var}")
+
+# Add test cases with None values
+test_data_with_na = [1, 2, None, 4, 5, None, 7]
+print(f"Mean (with NAs): {mean(test_data_with_na)}")
+print(f"Variance (with NAs): {variance(test_data_with_na)}")
