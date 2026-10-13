@@ -26,7 +26,7 @@ def mean(data: List[Union[int, float]]) -> float:
 
 def variance(data: List[Union[int, float]]) -> float:
     """
-    Calculate the variance of a list of numbers.
+    Calculate the variance of a list of numbers
     
     Args:
         data: A list of numbers
